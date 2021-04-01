@@ -5,21 +5,10 @@ let api = 'https://v2.jokeapi.dev/joke/'
 let amount = 'amount=10' 
 let type = '&type=twopart&'
 
-// const queryButton = document.getElementById("addString");
-// queryButton.innerText = 'Search Query'
-// queryButton.addEventListener("click", addSearchQuery);
-
-// const amountButton = document.getElementById("addAmount");
-// amountButton.addEventListener("click", addAmount);
-
-// const languageButton = document.getElementById("selectLanguage");
-// languageButton.addEventListener("click", selectLanguage);
-
 
 function addSearchQuery() {
   const queryInput = document.getElementById("query");
   const searchQuery = `contains=${queryInput.value}&`
-  // console.log(searchQuery);
   return searchQuery;
 }
 
@@ -165,34 +154,15 @@ function fetchData(){
   
 })
   
-};//Works perfectly;
-
-
-
+};
 
 const reloadButton = document.querySelector("#reload");
-// Reload everything:
+
 function reload() {
     reload = location.reload();
 }
-// Event listeners for reload
+
 reloadButton.addEventListener("click", reload);
 
-/*Bu asagidaki bolumde url'yi update edemiyoruz!*/
-// async function fetchData(url){
-//     try{
-//       const response = await fetch(url);
-//       const data = await response.json();
-//       return data;
-//     }
-//     catch(error){
-//       console.log(error);
-//     }
-//   };
 
-// async function getData(){
-//     const response = await fetchData('https://v2.jokeapi.dev/joke/Any?amount=10');
-//     console.log(response);
-// }
-// getData()
 
